@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Script/sample.js"></script>
+    <link rel="stylesheet" href="./Style.css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+    <div class="container">
+        <form action=" " >
+            <h2 >Login form</h2>
+            <div>
+            <label for="firstname">
+                Name: <br><input type="text"  id="firstname" placeholder="FirstName" onchange="TextContent()">
+            </label><br>
+            <p style="display: none;" id="usertext"></p>
+        </div>
+            <br>
+            <div>
+            <label for="email">
+                Email: <br><input type="text" id="email" placeholder="Email" onchange="emailContent()">
+            </label><br>
+            <p style="display: none;" id="email-check"></p>
+        </div>
+        <br>
+        <div>
+            <label for="phonenumber">
+                Phone Number: <br><input type="text" id="phonenumber" placeholder="10-digit number" maxlength="10" onchange="validate()">
+            </label><br>
+            <p style="display: none;" id="Check"></p>
+            
+        </div>
+        <br>
+        <div>
+            <label for="password">
+                Password: <br><input type="password" id="password" placeholder="password" onchange="pwdContent()">
+            </label><br>
+            <p style="display: none;" id="password-check"></p>
+        </div>
+        <br>
+        <div>
+            <label for="gender">
+               Gender <br>
+               <input type="radio" name="gender" value="male">Male <br/>
+               <input type="radio" name="gender" value="female">Female <br/>
+               <input type="radio" name="gender" value="not wish to answer">Not wish to Disclose <br/>
+            </label>
+        </div>
+        <br>
+        <div>
+             <label for="">Address :</label> <br>
+             <textarea name="" id="address" cols="40" rows="4"></textarea><br>
+             <p style="display: none;"></p>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date of Birth: </label>
+            <br>
+            <input type="date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="time">Time</label><br>
+            <input type="time" id="time">
+        </div>
+        <br>
+        <div>
+            <label for="language">Language</label>
+            <br>
+            <input type="checkbox" name="language" value="Tamil">Tamil <br>
+            <input type="checkbox" name="language" value="English">English <br>
+
+            <input type="checkbox" name="language" value="Telugu">Telugu
+        </div>
+        <br>
+        <div>
+            <label for="interset">Select Your field of interset</Select></label>
+            <br>
+            <select multiple size="3" id="select">
+                <option name="field" value="cricket">Cricket</option>
+                <option name="field" value="kabaddi">Kabaddi</option>
+              <option name="field"   value="running">Running</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="photo">Upload your photo</label>
+            <br>
+            <input type="file" id="photo" onchange="photoContent()"><br>
+            <p style="display: none;" id="photo-check"></p>
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="view()">submit</button>
+            <button>reset</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <h1 align="center">Output Screen</h1>
+        <table border="3" align="center">
+            <tr>
+                <th width="20%">Section</th>
+                <th>User Details</th>
+            </tr>
+            <tr>
+                <th>UserName</th>
+                <td id="username"></td>
+            </tr>
+            <tr>
+                <th>Email ID</th>
+                <td id="emailid"></td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td id="phoneNumber"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td id="Password"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td id="Gender"></td>
+            </tr>
+            <tr>
+                <th>Current Address</th>
+                <td id="Address">
+                    
+                       
+                    
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td id="DOB"></td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td id="Time"></td>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <td>
+                    <ul id="Language">
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Field of Interest</th>
+                <td>
+                    <ul id="interset">
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload your picture</th>
+                <td >
+                  <!-- <img src="./images/WIN_20240425_11_09_06_Pro.jpg" width="100" height="10%" alt="ProfilePicure" title="Picture">
+                 -->
+                
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
