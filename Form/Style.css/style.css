@@ -1,0 +1,26 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.container{
+    padding: 1rem;
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.container form div input{
+    border: 2px solid black; 
+    padding:0.5rem
+}
+.container form h2{
+  text-align: center;
+  font-size: 2rem;
+}
+.container form div label{
+    font-size: 1.4rem;
+    position: relative;
+   
+}
